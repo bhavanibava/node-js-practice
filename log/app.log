@@ -1,0 +1,33 @@
+{"level":"info","message":"GET - /users","timestamp":"2018-06-23T18:58:28.226Z"}
+{"level":"info","message":"User info has been retrived successfully","timestamp":"2018-06-23T19:38:36.435Z"}
+{"level":"info","message":"GET - /users","timestamp":"2018-06-24T12:19:52.123Z"}
+{"level":"info","message":"GET - /users","timestamp":"2018-06-24T12:19:52.134Z"}
+{"level":"info","message":"GET - /users","timestamp":"2018-06-24T12:19:52.136Z"}
+{"level":"info","message":"GET - /users","timestamp":"2018-06-24T12:19:52.191Z"}
+{"level":"info","message":"GET - /users","timestamp":"2018-06-24T12:19:52.192Z"}
+{"level":"info","message":"GET - /users","timestamp":"2018-06-24T12:19:52.192Z"}
+{"level":"info","message":"GET - /users","timestamp":"2018-06-24T12:19:52.214Z"}
+{"level":"info","message":"GET - /users","timestamp":"2018-06-24T12:19:52.215Z"}
+{"level":"info","message":"GET - /users","timestamp":"2018-06-24T12:19:52.215Z"}
+{"level":"info","message":"GET - /users","timestamp":"2018-06-24T12:19:52.235Z"}
+{"level":"info","message":"GET - /users","timestamp":"2018-06-24T12:31:06.964Z"}
+{"level":"info","message":"User info has been retrived successfully","timestamp":"2018-06-24T17:42:45.536Z"}
+{"level":"info","message":"User info has been retrived successfully","timestamp":"2018-06-24T17:51:01.014Z"}
+{"level":"info","message":"GET - /users","timestamp":"2018-06-24T18:16:05.382Z"}
+{"level":"info","message":"GET - /users","timestamp":"2018-06-25T06:38:28.043Z"}
+{"level":"info","message":"postuser get operation details","timestamp":"2018-06-25T06:48:26.201Z"}
+{"level":"info","message":"postuser get operation details","timestamp":"2018-06-25T06:50:12.696Z"}
+{"level":"info","message":"posts-user get operation","timestamp":"2018-06-25T07:24:55.931Z"}
+{"level":"info","message":"postuser get details successfully","timestamp":"2018-06-25T07:24:56.929Z"}
+{"level":"info","message":"posts-user get operation","timestamp":"2018-06-25T07:25:07.750Z"}
+{"level":"info","message":"postuser get details successfully","timestamp":"2018-06-25T07:25:07.951Z"}
+{"level":"info","message":"posts-user get operation","timestamp":"2018-06-25T07:26:01.594Z"}
+{"level":"info","message":"postuser get details successfully","timestamp":"2018-06-25T07:26:02.327Z"}
+{"level":"info","message":"posts-user get operation","timestamp":"2018-06-25T07:26:21.153Z"}
+{"level":"info","message":"postuser get details successfully","timestamp":"2018-06-25T07:26:21.378Z"}
+{"level":"info","message":"posts-user get operation","timestamp":"2018-06-25T07:33:40.285Z"}
+{"level":"info","message":"postuser get details successfully","timestamp":"2018-06-25T07:33:40.844Z"}
+{"level":"info","message":"posts-user get operation","timestamp":"2018-06-25T08:49:50.759Z"}
+{"level":"info","message":"postuser get details successfully","timestamp":"2018-06-25T08:49:51.286Z"}
+{"level":"info","message":"posts-user get operation","timestamp":"2018-06-25T09:22:54.542Z"}
+{"level":"info","message":"postuser get details successfully","timestamp":"2018-06-25T09:22:55.526Z"}
