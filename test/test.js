@@ -34,7 +34,7 @@ describe('perform user crud operations.....',function(){
             })    
     });
 
-    it.skip('should check one user detail based on id',function(done){
+    it('should check one user detail based on id',function(done){
         let req = sinon.spy();
         let res = sinon.spy();
             res = { json:sinon.spy() };
@@ -49,7 +49,7 @@ describe('perform user crud operations.....',function(){
             })
     });
 
-    it.skip('should check all user details',function(done){
+    it('should check all user details',function(done){
         let req = sinon.spy();
         let res = sinon.spy();
             res = { send:sinon.spy() };
