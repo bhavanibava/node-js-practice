@@ -1,20 +1,20 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var Post = new Schema({
-    postId : {
-        type : Number,
-        index : true
-    },
     userId : {
         type : Number,
         index : true
     },
-    dob : {
-        type:Date,
-        default:Date.now
+    Id : {
+        type : Number,
+        index : true
     }
     // body : {
     //     type : String
     // }
 });
 module.exports =mongoose.model('Post',Post);
+
+//"postId":"10", "userId":"1", "dob":"24th"
+
+

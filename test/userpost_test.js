@@ -2,46 +2,72 @@ var mocha = require('mocha');
 var assert = require('assert');
 var sinon=require('sinon');
 var tools= require("../db/index");
-var userPosts = require('../resources/post_operations');
-var _ = require('underscore')
+var Posts = require('../resources/post_operations');
 var expect= require("chai").expect;
 
 describe('User_post operations.....',function(){
-
     it('should check get users details',function(done){
-        let req = req.sinon.spy();
-        let res = res.sinon.spy();
-            res = {json : sinon.spy(), setHeader : sinon.spy()}
-            req = {
-                "query" : {
-                    "postId" : 100
-                }
-            }
-        userPosts.getmypostdetails(req,res).then(function(postdata){
-            chai.expect(postdata.id,100);
+        var req = sinon.spy();
+        var res = sinon.spy();
+            res = {json : sinon.spy(), setHeader : sinon.spy(), send:sinon.spy()}
+        Posts.getmypostdetails(req,res).then(function(postdata){
+           // chai.expect(postdata.id,100);
+            console.log('getmypostdetails...',postdata);
             done();
         })
     });
 
-    it.skip('should check update details',function(req,res){
-        let req = req.sinon.spy();
-        let res = res.sinon.spy();
-            res = {json : sinon.spy(), setHeader : sinon.spy()}
+    it('should create an post-user details',function(done){
+        var req = sinon.spy();
+        var res = sinon.spy();
+            res = { json : sinon.spy() };    
             req = {
-                "query" : {
-                    "postId" : 2,
-                    "userId" : 1,
-                    "body" : { hi,welcome:this/tbody/tcontent/tfrom/tupdate/tfunction}
+                "body":{
+                    "userId" : 20,
+                    "Id" : 5
                 }
             }
-        userposts.updatemypostdetails(req,res).then(function(updatedmydata){
-            assert(updatemypostdetails.postId,updatedmydata.postId);
+            Posts.createmypostDetails(req, res).then(function(createData){
+               assert(createdUserData.userId, req.body.userId);
+               assert(createdUserData.Id, req.body.Id);
+               console.log('createmypostDetails...',createData);
+               done();
+            })
+    });
+    it('should check update details',function(req,res){
+        var req = sinon.spy();
+        var res = sinon.spy();
+            res = {json : sinon.spy(), setHeader : sinon.spy(),send : sinon.spy()}
+            req = {
+                "params" : {
+                    "Id" : 5
+                },
+                "body" : {
+                    "userId" : 2,
+                    "Id": 5
+                }
+            }
+        Posts.updatemypostdetails(req,res).then(function(updatedmydata){
             assert(updatemypostdetails.userId,updatedmydata.userId);
-            assert(updatemypostdetails.body,updatedmydata.body);
+            assert(updatemypostdetails.Id,updatedmydata.Id);
             console.log('updatemypostdetails..',updatedmydata);
             done();
         })
 
     });
 
+    it('delete post-user details',function(req,res){
+        var req = sinon.spy();
+        var res = sinon.spy();
+            res = {json : sinon.spy(),send : sinon.spy()}
+            req = {
+                "params" : {
+                    "id" : 5 
+                }
+            }
+        Posts.removemypostDetails(req,res).then(function(removeData){
+            console.log('removemypostDetails..',removeData);
+            done();
+        })
+    });
 });
