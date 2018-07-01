@@ -1,0 +1,12 @@
+module.exports=
+{
+    "productDB":{
+        "dbName":"users",
+        "protocol":"mongodb://",
+        "host":"localhost",
+        "dbPort":27017
+    },
+    "productApp":{
+        "port":3000
+    }
+}
