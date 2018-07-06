@@ -3,9 +3,12 @@ var logger = require('../logger/index');
 
 var getAllUserDetails = function(req,res){
     logger.info("GET - /users");
-    return User.find(function(err,users){
+    return User.find(function(err,user){
         if(!err){
-            return res.send(users);
+            return res.json({
+				statuscode : 200,
+				message : user
+			});
         }
         else{
             res.statuscode = 500;

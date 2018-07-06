@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var request = require('request');
 router.get('/',function(req,res,next){
     res.send('welcome bava');
 });
@@ -16,7 +15,7 @@ router.post('/',function(req,res,next){
     users.createUserDetails(req,res)
 });
 router.put('/:userId',function(req,res,next){
-    users.updateAllUserDetails(req,res)
+    users.updateUserDetails(req,res)
 });
 router.delete('/:userId',function(req,res,next){
     users.removeUserDetails(req,res)
