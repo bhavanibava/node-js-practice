@@ -2,7 +2,14 @@
     <head>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="./bootstrap/js/jquery.min.js" rel="stylesheet">
+        <link href="./bootstrap/js/bootstrap.min.js" rel="stylesheet">
         <link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+        <style>
+            .pagination {
+                display: inline-block;
+            }
+        </style>
     </head> 
     <body>
         <div class="navbar navbar-inverse navbar-fixed-top">
@@ -28,7 +35,19 @@
                 <h1>MyTask 
                     <label class="button pull-right"><a href="./addtask.html">+</a></label>
                 </h1>
-                <h3><a href="./login.html">please Login to get your task-list</a></h3>
+                <p><a href="./login.html">please Login to get your task-list</a></p>
+                <p>pagination</p>
+                <div class="pagination">
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+                </div>
             </div>
         </div>
     </body>

@@ -3,6 +3,12 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
         <link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+        <style>
+            .pagination {
+                display: inline block;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -21,6 +27,28 @@
                         
                         <button type="button" href="#" class="btn-primary">save</button>
                 </form>
+                <div class="container">
+                    <ul class="dropdown">
+                        <button class="btn-default dropdown-toggle" type="button" data-toggle="dropdown-toggle">menu<a class="caret"></a></button>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="#">one</a></li>
+                            <li><a href="#">two</a></li>
+                            <li><a href="#">three</a></li>
+                            <li><a href="#">four</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="pagination">
+                    <ul>
+                        <li><a href="#">&laquo;</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li> 
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul> 
+                </div>
             </div>
         </div>
     </body>
