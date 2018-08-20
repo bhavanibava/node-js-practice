@@ -2,9 +2,13 @@
 crud operations
 
 How to use:
+
   - git clone : https://github.com/bhavanibava/node-js-practice.git
+  
   - npm install
+  
   -run node bin/www
+  
   -open restlet client and run api call's which are given below :
   
             - https://localhost:3000/users/all 
